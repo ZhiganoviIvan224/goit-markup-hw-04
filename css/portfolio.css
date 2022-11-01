@@ -43,82 +43,83 @@ img{
 }
 
 /*Header*/
-.header{
-    border-bottom: 1px solid #ECECEC;
-}
-.header-container{
+.header {
+    background: var(--primary-background-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC;
+  }
+  .header-nav-list {
     display: flex;
-    align-items:center;
-}
-.header-nav {
+    gap: 50px;
+  }
+  .header-nav {
     display: flex;
     align-items: center;
-    margin-left: 93px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-.header-list {
+  }
+  .header-contact {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
+  
+  .header-container {
+    display: flex;
+  }
+  .header-nav-after-list {
     display: flex;
     align-items: center;
     gap: 50px;
-}
-.header-amail{
-    display: flex;
-    margin-left:344px;
-    gap: 50px;
-}
-.header-list,.header-amail:not(:last-child){
-    margin: 0;
-}
-.header-logo-web{
-    font-family: var(--first-font);
+  }
+  .logo-type-one {
+    color: var(--link-hover-color);
+  }
+  .logo-type {
+    margin-right: 93px;
+  }
+  .logo-type {
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31 /26);
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3; 
-}
-.header-logo-studio{
-    font-family: var(--first-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 /26);
-    letter-spacing: 0.03em;
-    color: black;
-}
-.link-nav a{
-    font-family: var(--second-font);
+    color: var(--text-black);
+  }
+  .header-nav-list .link.current {
+    color: #212121;;
+  }
+  .header-link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 /14);
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
-}
-.link-nav a:hover,.link-nav a:focus{
+    color: var(--second-text-color);
+  }
+  .header-link:hover,
+  .header-link:focus,
+  .header-mail-link:hover,
+  .header-mail-link:focus {
     color: var(--link-hover-color);
-}
-.link-amail {
-    font-family: var(--second-font);
+  }
+  
+  .header-mail-link,
+  .header-tel-link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 /14);
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-}
-.link-tel{
-    font-family: var(--second-font);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 /14);
-    letter-spacing: 0.02em;
-    color: #757575;
-}
-.link-amail:hover,
-.link-tel:hover,
-.link-amail:focus,
-.link-tel:focus{
-    color: var(--link-hover-color);
-}
+  }
+  .header-svg{
+    fill: #757575;
+    margin-right: 10px;
+    justify-items: center;
+  }
+  .header-svg:hover,
+  .header-svg:focus{
+    fill: var(--link-hover-color);
+    cursor: pointer;
+  }
 /*Main,buttons*/
 .buttons-container{
     margin-bottom: 50px;
@@ -132,11 +133,17 @@ img{
     
 
 }
+.button-li{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .photo{
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
     gap: 30px;
+}
+.photo-team{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .photo li{
     border: 1px solid #EEEEEE;
@@ -194,53 +201,102 @@ img{
     color: #757575; 
 }
 /*footer*/
-.footers{
+.footer {
     background: #2F303A;
-}
-.footer-web{
-    font-family: var(--first-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 /26);
-    color:#2196F3;
-}
-.footer-studio{
-    font-family: var(--first-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 /26);
-    color:var(--accent-color);
-}
-.address-p{
-    font-family: var(--second-font);
-    font-weight: 400;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-logo {
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-size: 14px;
-    line-height: calc(24 /14);
-    letter-spacing: 0.03em; 
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--accent-color);
-}
-.address-mail,.address-tel{
-    font-family: var(--second-font);
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .footer-logo-one {
+    color: var(--link-hover-color);
+  }
+  .footer-item:not(:last-child) {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 /14);
+    margin-bottom: 9px;
+  }
+  .footer-item-list {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primary-background-color);
+  }
+  .footer-addres{
+    color: var(--accent-color);
+  }
+  .footer-mail-link,
+  .footer-tel-link {
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-}
-.address-mail:hover,
-.address-tel:hover,
-.address-mail:focus,
-.address-tel:focus{
-    color: var(--link-hover-color);
-}
-.section-logo{
-    padding-top: 60px;
-}
- .address-p{
-    margin-top: 20px;
- }
-.footer-address{
-    padding-bottom: 60px;
-}
+    font-style: normal;
+  }
+  
+  .footer-tel-link:hover,
+  .footer-tel-link:focus,
+  .footer-mail-link:hover,
+  .footer-mail-link:focus {
+    color:var(--link-hover-color);
+  }
+  .adress-title {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-background-color);
+  }
+  /* Footer svg */
+  
+  .footer-svg-link{
+    display: flex;
+    gap: 10px
+  }
+  .footer-adress{
+    display: flex;
+    gap: 156px;
+  }
+  .footer-title-container{
+    width: 116px;
+    height: 16px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    margin: 10px;
+  }
+  .footer-social-link:hover,
+  .footer-social-link:focus{
+    fill: var(--accent-color);
+    background-color: var(--link-hover-color);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+  .footer-social-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill:  #AFB1B8;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+  }
+  .svg-links{
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+  }
