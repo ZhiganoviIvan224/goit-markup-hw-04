@@ -120,6 +120,10 @@ img{
     fill: var(--link-hover-color);
     cursor: pointer;
   }
+  .header-mail-link {
+    align-items: center;
+    display: flex;
+  }
 /*Main,buttons*/
 .buttons-container{
     margin-bottom: 50px;
@@ -133,8 +137,9 @@ img{
     
 
 }
-.button-li{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.button-li:hover,
+.button-li:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .photo{
     display: flex;
@@ -142,9 +147,9 @@ img{
     padding: 0 4px;
     gap: 30px;
 }
-.photo-team{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+.photo-li:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} 
 .photo li{
     border: 1px solid #EEEEEE;
 }
@@ -274,8 +279,7 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color);
-    margin-bottom: 30px;
-    margin: 10px;
+    margin-bottom: 20px;
   }
   .footer-social-link:hover,
   .footer-social-link:focus{
@@ -286,10 +290,8 @@ img{
     height: 44px;
   }
   .footer-social-link{
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
-    fill:  #AFB1B8;
+    fill:  #FFFFFF;
     padding: 12px;
     cursor: pointer;
     display: flex;
