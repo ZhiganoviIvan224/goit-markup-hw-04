@@ -370,8 +370,8 @@ color: var(--button-white-color);
 }
 
 .team-list .item .img-descr {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team .team-member {
@@ -590,9 +590,6 @@ color: var(--button-white-color);
   justify-content: center;
 }
 
-  .team-link{
-  padding-bottom: 42px;
-}
 
 .team-content {
   margin-bottom: 16px;
